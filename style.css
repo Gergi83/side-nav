@@ -34,7 +34,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 10vh;
+  height: 100vh;
   transform: translateX(-100%);
   transition: transform 0.33s ease-in-out;
 }
@@ -44,4 +44,63 @@ body {
 }
 
 .nav-black {
+  background: #111;
+  width: 40%;
+  max-width: 480px;
+  min-width: 320px;
+  transition-delay: 0.33s;
+}
+
+.nav-black.visible {
+  transition-delay: 0s;
+}
+
+.nav-grey {
+  background: #f3f3f3;
+  width: 95%;
+  transition-delay: 0.17;
+}
+
+.nav-grey.visible {
+  transition-delay: 0.17s;
+}
+
+.nav-white {
+  background: #fff;
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0s;
+}
+
+.nav-white.visible {
+  transition-delay: 0.33s;
+}
+
+.close-btn {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  opacity: 0.33;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  margin: 20px 0;
+}
+
+.list li a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list ul {
+  list-style-type: none;
+  padding-left: 20px;
 }
